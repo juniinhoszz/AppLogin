@@ -29,6 +29,12 @@ namespace AppLogin
                 Email = "rodrigo@etec",
                 Nome = "Rodrigo",
                 Senha = "rodrigo123"
+            },
+            new DadosUsuario()
+            {
+                Email = "pepagay@xvideos.com",
+                Nome = "Pepa Broxa",
+                Senha = "pepabroxa"
             }
         };
 

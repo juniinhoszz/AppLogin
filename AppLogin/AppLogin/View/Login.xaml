@@ -34,9 +34,7 @@
                                BackgroundColor="Transparent" FontSize="13"
                                HeightRequest="35"
                                TextColor="White"
-                               Placeholder="Digite seu usuário de acesso"
-                               
-                               
+                               Placeholder="Digite seu email de acesso"
                                PlaceholderColor="White"/>
                     </Frame>
 
