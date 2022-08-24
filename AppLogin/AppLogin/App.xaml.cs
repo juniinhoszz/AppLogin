@@ -23,6 +23,12 @@ namespace AppLogin
                 Email = "prof@etec",
                 Nome = "Professor",
                 Senha = "456"
+            },
+            new DadosUsuario()
+            {
+                Email = "rodrigo@etec",
+                Nome = "Rodrigo",
+                Senha = "rodrigo123"
             }
         };
 
@@ -30,7 +36,7 @@ namespace AppLogin
         {
             InitializeComponent();
 
-            if (Properties.ContainsKey("usuario_logado"))
+           if (Properties.ContainsKey("usuario_logado"))
                 MainPage = new View.AreaProtegida();
             else
                 MainPage = new View.Login();

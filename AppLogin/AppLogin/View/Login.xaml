@@ -2,11 +2,77 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppLogin.View.Login">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="Blue" Offset="0.3" />
+            <GradientStop Color="Red" Offset="1.1" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame CornerRadius="10"
+                   x:Name="dados_form"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="Transparent"
+                   BorderColor="White"
+                   Margin="10">
+
+                <StackLayout>
+                    <Label FontSize="18" Text="Email:" TextColor="white" HorizontalOptions="CenterAndExpand"  Margin="2" />
+                    
+                    <Frame CornerRadius="30"
+                           BackgroundColor="Transparent"
+                           BorderColor="White"
+                           Margin="2"
+                           HeightRequest="35"
+                           WidthRequest="500"
+                           HorizontalOptions="Start">
+
+                        <Entry x:Name="txtUser"
+                               BackgroundColor="Transparent" FontSize="13"
+                               HeightRequest="35"
+                               TextColor="White"
+                               Placeholder="Digite seu usuário de acesso"
+                               
+                               
+                               PlaceholderColor="White"/>
+                    </Frame>
+
+                    <Label FontSize="18" Text="Senha:" TextColor="white" HorizontalOptions="CenterAndExpand"  Margin="2"/>
+                    
+                    <Frame CornerRadius="30"
+                           BackgroundColor="Transparent"
+                           BorderColor="White"
+                           Margin="2"
+                           HeightRequest="34"
+                           WidthRequest="500"
+                           HorizontalOptions="Start">
+
+                        <Entry x:Name="txtSenha"
+                           BackgroundColor="Transparent" FontSize="13"
+                           HeightRequest="35"
+                           TextColor="White"
+                           Placeholder="Digite sua senha de acesso"
+                           PlaceholderColor="White"
+                           IsPassword="True"/>
+                    </Frame>
+
+                    
+                    <Button x:Name="btnConectar"
+                            Text="Conectar"
+                            Clicked="btnConectar_Clicked"
+                            HorizontalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            Margin="5"
+                            BorderColor="white"
+                            BorderWidth="1"
+                            CornerRadius="10"/>
+                </StackLayout>
+
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
